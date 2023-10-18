@@ -1,20 +1,20 @@
 import React from "react";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Testimonials from "./components/Testimonials";
 
-export default function About() {
+export default function App() {
   return (
-    <section id="about" className="bg-gray-100 py-10">
-      <div className="container mx-auto flex flex-col md:flex-row items-center">
-        <div className="md:w-1/2 p-5">
-          {/* Content */}
-        </div>
-        <div className="md:w-1/2 p-5">
-          <img
-            className="object-cover object-center rounded-lg shadow-md"
-            alt="hero"
-            src="renjith1.jpg"
-          />
-        </div>
-      </div>
-    </section>
+    <main className="text-gray-400 bg-gray-900 body-font">
+      <Navbar />
+      <About />
+      <Projects />
+      <Skills />
+      <Testimonials />
+      <Contact />
+    </main>
   );
 }
